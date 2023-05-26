@@ -9,6 +9,7 @@ Members:
 > Hiba Khan
 
 Group project: Grocery Shopping System
+
 School: Georgia State University 
 
 
