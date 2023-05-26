@@ -10,3 +10,14 @@ Members:
 
 Group project: Grocery Shopping System
 School: Georgia State University 
+
+
+
+Sign-in
+![](images/ReadMe_SignIn.png)
+
+Home page
+![](images/ReadMe_HomePage.png)
+
+Checkout
+![](images/ReadMe_Checkout.png)
