@@ -1,4 +1,4 @@
-# cs4350avengers
+# FreshFoods (cs4350avengers)
 Spring 2020 CS 4350 group project
 
 Members:
