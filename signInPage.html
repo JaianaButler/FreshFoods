@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8" />
+    <title>FreshFoods - Sign In</title>
+    <link rel="stylesheet" type="text/css" href="./css/signInStyle.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img class="logo" src="./images/brandlogo-alt.png" style="width: 64px" />
+    </div>
+
+    <div class="container">
+      <div class="sign-in-container">
+        <form action="" method="post">
+          <h2>Sign in</h2>
+
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            name="email"
+            required="Please enter your email"
+          />
+          <br />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+          <br />
+          <a href="#">Forgot password?</a>
+          <!-- Not yet implemented -->
+          <br />
+          <input type="submit" id="sign-in-button" value="Sign in" />
+        </form>
+      </div>
+      <!-- end of sign-in container -->
+
+      <div class="sign-up-container">
+        <h2>Don't have an account?</h2>
+        <p>Sign up and start enjoying our door deliveries!</p>
+        <a href="./signUpPage.html"><button class="ghost">Join Now</button></a>
+      </div>
+      <!-- end of sign-up container -->
+    </div>
+    <!-- end of container -->
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Font Awesome Kit Code -->
+	<script src="https://kit.fontawesome.com/1a0d434c1d.js" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<title>FreshFoods - Your Cart</title>
+	<link rel="stylesheet" type="text/css" href="./css/cartStyle.css">
+	<link rel="stylesheet" type="text/css" href="./css/navStyle.css">
+	<link rel="stylesheet" type="text/css" href="./css/itemStyle.css">
+
+	<!-------------------- JQUERY ---------------------->
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-------------------- NAV CONTENT ---------------------->
+    <div class="navbar">
+    
+        <a class="home-link" href="homePage.html">
+            <img class="logo" src="./images/brandlogo.png" style="width: 60px;">
+        </a>
+    
+        <form method="POST" action="browse.html">
+            <div class="dropdown">
+                <button name="food" class="dropbtn">Food</button>
+                <div class="dropdown-content">
+                    <button name="produce" type="submit" class="nav-link">Produce</button>
+    
+                    <button name="meats" type="submit" class="nav-link">Meats</button>
+    
+                    <button name="dairy-eggs-cheese" type="submit" class="nav-link">Dairy, Eggs & Cheese</button>
+    
+                    <button name="pasta" type="submit" class="nav-link">Pasta</button>
+    
+                    <button name="snacks" type="submit" class="nav-link">Snacks</button>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <button name="beverages" class="dropbtn">Beverages</button>
+                <div class="dropdown-content">
+                    <button name="soda" type="submit" class="nav-link">Sodas</button>
+    
+                    <button name="water" type="submit" class="nav-link">Water</button>
+    
+                    <button name="coffee-tea" type="submit" class="nav-link">Coffees & Teas</button>
+                </div>
+            </div>
+        </form>
+    
+        <div class="dropdown">
+            <a href="homePage.html"><button name="recipes" class="dropbtn">Recipes</button></a>
+        </div>
+    
+        <div class="toolbar">
+            <div class="dropdown">
+                <button name="account" class="dropbtn">Account</button>
+                <div class="dropdown-content">
+                    <span class="user">
+                        Hi, User
+                    </span>
+                    <hr class="solid">
+    
+                    <a href="logout.html"><button name="logout" type="submit" class="nav-link">Logout</button></a>
+                </div>
+            </div>
+    
+            <a href="cartPage.html">
+                <button class="cart-button">
+                    <i class="fas fa-shopping-basket" style="color: white; margin-right: 8px;"></i>
+                    Cart
+                    <!--<span style="background-color: rgb(232, 16, 74); color: rgb(255, 255, 255); line-height: 26px; position: absolute; left: 192px; top: -2px; width: 26px; height: 26px; border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%;" data-radium="true">3</span>-->
+                </button>
+            </a>
+    
+            <div class="search-container">
+                <form action="searchAction.html" method="POST">
+                    <input type="text" name="search">
+                    <button name="submit-search" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+	<!-------------------- MAIN CONTENT ---------------------->
+	<div class="shopping-cart">
+
+		<!-- Title -->
+		<div class="title">Your Cart</div>
+				<div class="item">
+
+					<div class="buttons">
+						<form method='post' action=''>
+							<input type='hidden' name='product_code' value="" />
+							<input type='hidden' name='action' value="remove" />
+							<button type='submit' class='delete-btn'>&times;</button>
+						</form>
+					</div>
+
+					<div class="name">
+						
+						<div class="price"></div>
+					</div>
+
+					<div class="quantity">
+						
+					</div>
+
+					<div class="total-product-price">
+						
+					</div>
+
+					
+				</div>
+		
+	</div>
+
+	<div class="order-details">
+		<div class="subtotal">
+			Total before tax: $
+		</div>
+		<div class="tax-fee">
+			Estimated tax: 
+			
+		</div>
+		<div class="total-cart-price">
+			
+			Subtotal: $
+		</div>
+		
+	</div>
+</body>
+</html>
